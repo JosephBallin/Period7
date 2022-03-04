@@ -43,7 +43,8 @@ Partial Class Form1
         Me.Selected_Color = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Eraser_Button = New System.Windows.Forms.Button()
+        Me.Clear_Button = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -258,21 +259,31 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Color"
         '
-        'Button1
+        'Eraser_Button
         '
-        Me.Button1.Location = New System.Drawing.Point(571, 48)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(54, 51)
-        Me.Button1.TabIndex = 23
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Eraser_Button.Location = New System.Drawing.Point(582, 29)
+        Me.Eraser_Button.Name = "Eraser_Button"
+        Me.Eraser_Button.Size = New System.Drawing.Size(54, 30)
+        Me.Eraser_Button.TabIndex = 23
+        Me.Eraser_Button.Text = "Eraser"
+        Me.Eraser_Button.UseVisualStyleBackColor = True
+        '
+        'Clear_Button
+        '
+        Me.Clear_Button.Location = New System.Drawing.Point(582, 80)
+        Me.Clear_Button.Name = "Clear_Button"
+        Me.Clear_Button.Size = New System.Drawing.Size(54, 30)
+        Me.Clear_Button.TabIndex = 24
+        Me.Clear_Button.Text = "Clear"
+        Me.Clear_Button.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(939, 578)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Clear_Button)
+        Me.Controls.Add(Me.Eraser_Button)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -303,5 +314,6 @@ Partial Class Form1
     Friend WithEvents Selected_Color As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Eraser_Button As Button
+    Friend WithEvents Clear_Button As Button
 End Class
