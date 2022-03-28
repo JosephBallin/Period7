@@ -35,11 +35,11 @@ Partial Class Form1
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
+        Me.ButtonYellow = New System.Windows.Forms.Button()
+        Me.ButtonBlue = New System.Windows.Forms.Button()
+        Me.ButtonPurple = New System.Windows.Forms.Button()
+        Me.ButtonPink = New System.Windows.Forms.Button()
+        Me.ButtonOrange = New System.Windows.Forms.Button()
         Me.Button14 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -94,9 +94,9 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(687, 78)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(68, 13)
+        Me.Label1.Size = New System.Drawing.Size(27, 13)
         Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Polygon Size"
+        Me.Label1.Text = "Size"
         '
         'Button4
         '
@@ -143,50 +143,50 @@ Partial Class Form1
         Me.Button8.Text = "Circle"
         Me.Button8.UseVisualStyleBackColor = True
         '
-        'Button9
+        'ButtonYellow
         '
-        Me.Button9.BackColor = System.Drawing.Color.Yellow
-        Me.Button9.Location = New System.Drawing.Point(785, 12)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(26, 25)
-        Me.Button9.TabIndex = 12
-        Me.Button9.UseVisualStyleBackColor = False
+        Me.ButtonYellow.BackColor = System.Drawing.Color.Yellow
+        Me.ButtonYellow.Location = New System.Drawing.Point(753, 43)
+        Me.ButtonYellow.Name = "ButtonYellow"
+        Me.ButtonYellow.Size = New System.Drawing.Size(26, 25)
+        Me.ButtonYellow.TabIndex = 12
+        Me.ButtonYellow.UseVisualStyleBackColor = False
         '
-        'Button10
+        'ButtonBlue
         '
-        Me.Button10.BackColor = System.Drawing.Color.MediumBlue
-        Me.Button10.Location = New System.Drawing.Point(690, 43)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(26, 25)
-        Me.Button10.TabIndex = 13
-        Me.Button10.UseVisualStyleBackColor = False
+        Me.ButtonBlue.BackColor = System.Drawing.Color.MediumBlue
+        Me.ButtonBlue.Location = New System.Drawing.Point(690, 43)
+        Me.ButtonBlue.Name = "ButtonBlue"
+        Me.ButtonBlue.Size = New System.Drawing.Size(26, 25)
+        Me.ButtonBlue.TabIndex = 13
+        Me.ButtonBlue.UseVisualStyleBackColor = False
         '
-        'Button11
+        'ButtonPurple
         '
-        Me.Button11.BackColor = System.Drawing.Color.Purple
-        Me.Button11.Location = New System.Drawing.Point(722, 43)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(26, 25)
-        Me.Button11.TabIndex = 14
-        Me.Button11.UseVisualStyleBackColor = False
+        Me.ButtonPurple.BackColor = System.Drawing.Color.Purple
+        Me.ButtonPurple.Location = New System.Drawing.Point(722, 43)
+        Me.ButtonPurple.Name = "ButtonPurple"
+        Me.ButtonPurple.Size = New System.Drawing.Size(26, 25)
+        Me.ButtonPurple.TabIndex = 14
+        Me.ButtonPurple.UseVisualStyleBackColor = False
         '
-        'Button12
+        'ButtonPink
         '
-        Me.Button12.BackColor = System.Drawing.Color.Crimson
-        Me.Button12.Location = New System.Drawing.Point(754, 43)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(26, 25)
-        Me.Button12.TabIndex = 15
-        Me.Button12.UseVisualStyleBackColor = False
+        Me.ButtonPink.BackColor = System.Drawing.Color.Black
+        Me.ButtonPink.Location = New System.Drawing.Point(785, 12)
+        Me.ButtonPink.Name = "ButtonPink"
+        Me.ButtonPink.Size = New System.Drawing.Size(26, 25)
+        Me.ButtonPink.TabIndex = 15
+        Me.ButtonPink.UseVisualStyleBackColor = False
         '
-        'Button13
+        'ButtonOrange
         '
-        Me.Button13.BackColor = System.Drawing.Color.DarkOrange
-        Me.Button13.Location = New System.Drawing.Point(786, 43)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(26, 25)
-        Me.Button13.TabIndex = 16
-        Me.Button13.UseVisualStyleBackColor = False
+        Me.ButtonOrange.BackColor = System.Drawing.Color.DarkOrange
+        Me.ButtonOrange.Location = New System.Drawing.Point(786, 43)
+        Me.ButtonOrange.Name = "ButtonOrange"
+        Me.ButtonOrange.Size = New System.Drawing.Size(26, 25)
+        Me.ButtonOrange.TabIndex = 16
+        Me.ButtonOrange.UseVisualStyleBackColor = False
         '
         'Button14
         '
@@ -203,11 +203,11 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(827, 487)
         Me.Controls.Add(Me.Button14)
-        Me.Controls.Add(Me.Button13)
-        Me.Controls.Add(Me.Button12)
-        Me.Controls.Add(Me.Button11)
-        Me.Controls.Add(Me.Button10)
-        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.ButtonOrange)
+        Me.Controls.Add(Me.ButtonPink)
+        Me.Controls.Add(Me.ButtonPurple)
+        Me.Controls.Add(Me.ButtonBlue)
+        Me.Controls.Add(Me.ButtonYellow)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
@@ -241,10 +241,10 @@ Partial Class Form1
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Button11 As Button
-    Friend WithEvents Button12 As Button
-    Friend WithEvents Button13 As Button
+    Friend WithEvents ButtonYellow As Button
+    Friend WithEvents ButtonBlue As Button
+    Friend WithEvents ButtonPurple As Button
+    Friend WithEvents ButtonPink As Button
+    Friend WithEvents ButtonOrange As Button
     Friend WithEvents Button14 As Button
 End Class

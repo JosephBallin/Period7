@@ -110,23 +110,23 @@
         type = "Circle"
     End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles ButtonYellow.Click
         c = sender.backcolor
     End Sub
 
-    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles ButtonBlue.Click
         c = sender.backcolor
     End Sub
 
-    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles ButtonPurple.Click
         c = sender.backcolor
     End Sub
 
-    Private Sub Button12_Click_1(sender As Object, e As EventArgs) Handles Button12.Click
+    Private Sub Button12_Click_1(sender As Object, e As EventArgs) Handles ButtonPink.Click
         c = sender.backcolor
     End Sub
 
-    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles ButtonOrange.Click
         c = sender.backcolor
     End Sub
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
