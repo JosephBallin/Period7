@@ -40,6 +40,20 @@
                 d.pen = New Pen(c, w)
             End If
 
+            If type = "N-Gon" Then
+                d = New Gon(PictureBox1.Image, m_Previous, e.Location)
+                d.pen = New Pen(c, w)
+                d.radius = TrackBar3.Value
+                d.sides = TrackBar2.Value
+            End If
+
+            If type = "Picture" Then
+                d = New PBox(PictureBox1.Image, m_Previous, e.Location)
+                d.w = TrackBar1.Value
+                d.h = TrackBar1.Value
+                d.picture = PictureBox2.Image
+            End If
+
             m_shapes.Add(d)
                 PictureBox1.Invalidate()
                 m_Previous = e.Location
@@ -98,7 +112,7 @@
         PictureBox1.Image.Save(SaveFileDialog1.FileName)
     End Sub
 
-    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         type = "Rectangle"
     End Sub
 
@@ -110,27 +124,43 @@
         type = "Circle"
     End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles ButtonYellow.Click
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
         c = sender.backcolor
     End Sub
 
-    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles ButtonBlue.Click
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         c = sender.backcolor
     End Sub
 
-    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles ButtonPurple.Click
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
         c = sender.backcolor
     End Sub
 
-    Private Sub Button12_Click_1(sender As Object, e As EventArgs) Handles ButtonPink.Click
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
         c = sender.backcolor
     End Sub
 
-    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles ButtonOrange.Click
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
         c = sender.backcolor
     End Sub
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
         type = "Poly"
+    End Sub
+
+    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
+        type = "N-Gon"
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        type = "Picture"
+    End Sub
+
+    Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
+        OpenFileDialog1.ShowDialog()
+    End Sub
+
+    Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
+        PictureBox2.Load(OpenFileDialog1.FileName)
     End Sub
 End Class
 

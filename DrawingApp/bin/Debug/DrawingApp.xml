@@ -22,5 +22,10 @@ DrawingApp
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:WindowsApplication1.My.Resources.Resources.YOU_GOT_BLOCKED_CLARKE">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

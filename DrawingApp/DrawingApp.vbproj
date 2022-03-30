@@ -73,7 +73,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="circle.vb" />
-    <Compile Include="Class1.vb" />
+    <Compile Include="PBox.vb" />
+    <Compile Include="Square.vb" />
     <Compile Include="ERect.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -82,6 +83,7 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Gone.vb" />
     <Compile Include="Line.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -122,6 +124,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YOU GOT BLOCKED CLARKE.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
