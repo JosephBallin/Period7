@@ -73,7 +73,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="circle.vb" />
+    <Compile Include="Heptagon.vb" />
+    <Compile Include="Hexagon.vb" />
+    <Compile Include="Octogon.vb" />
+    <Compile Include="PaintSplashScreen.Designer.vb">
+      <DependentUpon>PaintSplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaintSplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PBox.vb" />
+    <Compile Include="Pentagon.vb" />
     <Compile Include="Square.vb" />
     <Compile Include="ERect.vb" />
     <Compile Include="Form1.vb">
@@ -101,6 +111,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Poly wants a cracker.vb" />
+    <Compile Include="Yes.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -111,6 +122,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaintSplashScreen.resx">
+      <DependentUpon>PaintSplashScreen.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
